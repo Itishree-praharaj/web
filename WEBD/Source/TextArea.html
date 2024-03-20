@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input {
+            display: block;
+        }
+
+        textarea {
+            display: block;
+        }
+
+        form {
+            border: 2px groove black;
+            width: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <form action="">
+            <label for="username">Username</label>
+            <input type="text" name="username" />
+            <label for="feedback">feedback</label>
+            <textarea name="feedback" id="" cols="30" rows="10"></textarea>
+            <label for="city">select city </label>
+            <select name="city" id="">
+                <option value="..select city..">Select city</option>
+                <option value="Cuttack">Cuttack</option>
+                <option value="Bhubaneswar">Bhubaneswar</option>
+                <option value="Bangalore">Bangalore</option>
+                <button type="submit">Submit</button>
+            </select>
+            <label for="skill">Skill set</label>
+            <input type="checkbox" name="Skill">Java</input>
+            <input type="checkbox" name="Skill">C++</input>
+            <input type="checkbox" name="skill">Python</input>
+            <label for="">
+                Gender
+            </label>
+            <input type="radio" name="gender">Male</input>
+            <input type="radio" name="gender">FeMale</input>
+            <input type="radio" name="gender"> Others</input>
+        </form>
+    </div>
+</body>
+
+</html>

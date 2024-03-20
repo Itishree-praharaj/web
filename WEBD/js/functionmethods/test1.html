@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function getname(mName) {
+            console.log(this);
+            return this.fName + " " + mName + " " + this.lName;
+        }
+
+        let student1 = {
+            fName: "Rakesh",
+            lName: "Pradhan"
+        }
+
+        let student2 = {
+            fName: "Nikhil",
+            lName: "Mishra"
+        }
+        let student3 = {
+            fName: "Ritesh",
+            lName: "Jena"
+        }
+        //call method
+        let stu1FullName = getname.call(student1, "kumar");
+        console.log(stu1FullName);
+
+        //in call method if we want to give any argument to the function then we can give it as a normal string
+        //call method directly executes the function
+
+        //apply method
+        let stu2FullName = getname.apply(student2, ["kumar"]);
+        console.log(stu2FullName);
+
+        //in apply method if we want to give any argument to the function then we have to give it as an array
+        // apply method directly executes the function
+
+        //bind method
+        let stu3FullName = getname.bind(student3, "Kumar");
+        console.log(stu3FullName());
+        // in bind method if we want to give any argument to the function then we can give it as an String
+        // it returns function 
+
+    </script>
+</body>
+
+</html>

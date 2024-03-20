@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Nosifer&family=Poltawski+Nowy:ital,wght@1,600&family=Poppins:ital,wght@0,600;0,700;1,400&family=Titillium+Web&display=swap"
+        rel="stylesheet">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: url(../img/bg8.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            margin: 0px;
+        }
+
+        .header {
+            text-align: center;
+            /* font-family: 'Lobster', sans-serif; */
+            font-family: 'Nosifer', sans-serif;
+            /* font-family: 'Poltawski Nowy', serif;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Titillium Web', sans-serif; */
+            font-size: 15px;
+
+        }
+
+        .header>h1 {
+            color: rgb(5, 50, 7);
+        }
+
+        fieldset>legend {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            border: 2px solid white;
+            border-radius: 12px 0px 12px 0px;
+            font-family: 'Lobster', sans-serif;
+            /* font-family: 'Nosifer', sans-serif; */
+            /* font-family: 'Poltawski Nowy', serif; */
+            /* font-family: 'Poppins', sans-serif; */
+            /* font-family: 'Titillium Web', sans-serif; */
+            font-size: 25px;
+            background-color: rgb(5, 50, 7, 0.5);
+            color: rgb(166, 252, 170);
+            padding: 15px;
+
+        }
+
+        td {
+            /* margin: 0px 50px; */
+            padding: 12px 12px;
+        }
+
+        label,
+        input {
+            padding: 8px 12px;
+        }
+
+        label {
+            font-size: larger;
+            color: white;
+            font-family: 'Poltawski Nowy', serif;
+        }
+
+        input {
+            border-radius: 12px;
+        }
+
+        textarea {
+            border-radius: 12px 12px;
+        }
+
+        .form-tag>form>fieldset {
+            border: 2px solid white;
+            border-radius: 0px 12px 0px 12px;
+            background-color: rgb(5, 50, 7, 0.5);
+
+        }
+
+        td>input:focus,
+        td>textarea:focus {
+            background-color: aquamarine;
+        }
+
+        .language {
+            color: white;
+        }
+
+        #Nation {
+            width: 100px;
+            padding: 7px 12px;
+            border-radius: 12px;
+        }
+        .qualification{
+            border-spacing:15px;
+            width: 100%;
+        }
+        .qualification td{
+            padding: 0px 12px;
+        }
+        .workexp{
+            /* border-spacing: px; */
+            width: 100%;
+        }
+        fieldset{
+            margin: 15px 10px;
+        }
+        #radio{
+            color: white;
+        }
+        .btn{
+            padding: 12px 12px;
+            opacity: 0.7;
+            outline: 0px;
+            border-radius: 12px 0px 12px 0px;
+            width: 100px;
+            background:linear-gradient(45deg,green,black);
+            color: white;
+        }
+        .btn:hover{
+            box-shadow: 1px 1px 10px whitesmoke;
+            opacity: 10;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>
+            Online Registration Form
+        </h1>
+    </div>
+    <div class="form-tag">
+        <form action="">
+            <fieldset>
+                <legend>
+                    Personal Information
+                </legend>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="">First name</label>
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td>
+                            <label for="">Middle Name</label>
+                        </td>
+                        <td><input type="text"></td>
+                        <td>
+                            <label for="">Last Name</label>
+                        </td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Fathers Name</label>
+                        </td>
+                        <td>
+                            <input type="text" name="" id="">
+                        </td>
+                        <td><label for="">Mothers Name</label></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Current Address</label>
+                        </td>
+                        <td>
+                            <textarea name="" id="" cols="22" rows="5"></textarea>
+                        </td>
+                        <td>
+                            <label for="">Permanent Address</label>
+                        </td>
+                        <td>
+                            <textarea name="" id="" cols="22" rows="5"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Contact Details</label></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Mobile Number</label></td>
+                        <td><input type="text"></td>
+                        <td><label for="">Telephone number</label></td>
+                        <td><input type="text" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">date Of birth</label>
+                        </td>
+                        <td>
+                            <input type="date">
+                        </td>
+                        <td><label for="">Place of Birth</label></td>
+                        <td><input type="text" name="" id=""></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Language Known</label></td>
+                        <td>
+                            <input type="checkbox" name=""><span class="language">Hindi</span> </input>
+                        </td>
+                        <td>
+                            <input type="checkbox" name=""><span class="language">English</span></input>
+                        </td>
+                        <td>
+                            <input type="checkbox" name=""><span class="language">Odia</span></input>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">
+                                Select your Hobbies
+                            </label></td>
+                        <td>
+                            <input type="checkbox"><span class="language">Gaming</span>
+                        </td>
+                        <td>
+                            <input type="checkbox"><span class="language">Cricket</span>
+                        </td>
+                        <td>
+                            <input type="checkbox"><span class="language">Watching Movies</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="">About Yourself</label></td>
+                        <td><textarea name="" id="" cols="22" rows="5"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">Nationality</label>
+                        </td>
+                        <td>
+                            <select name="" id="Nation">
+                                <option value="Indian">Indian</option>
+                                <option value="Uganda">Uganda</option>
+                                <option value="Kenya">Kenya</option>
+                                <option value="Jamaica">Jamaica</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="">
+                                Aadhaar Number
+                            </label>
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                        <td><label for="">PanCard Number</label></td>
+                        <td><input type="text"></td>
+                    </tr>
+                </table>
+            </fieldset>
+                <fieldset>
+                    <legend>Education Details</legend>
+                    <table class="qualification">
+                        <tr>
+                            <td><label for="">Sl no</label></td>
+                            <td><label for="">Qualification</label></td>
+                            <td><label for="">Institute/University</label></td>
+                            <td><label for="">Year of Passing</label></td>
+                            <td><label for="">Marks(%)</label></td>
+                        </tr>
+                        <tr>
+                            <td><i style="color: white;">1</i></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="date"></td>
+                            <td><input type="text" name="" id=""></td>
+                        </tr>
+                        <tr>
+                            <td><i style="color: white;">2</i></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="date"></td>
+                            <td><input type="text" name="" id=""></td>
+                        </tr>
+                        <tr>
+                            <td><i style="color: white;">3</i></td>
+                            <td><input type="text"></td>
+                            <td><input type="text"></td>
+                            <td><input type="date"></td>
+                            <td><input type="text" name="" id=""></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        Work Experience
+                    </legend>
+                    <table class="workexp">
+                        <tr>
+                            <td>
+                                <label for="">SNO</label>
+                            </td>
+                            <td>
+                                <label for="">Company</label>
+                            </td>
+                            <td>
+                                <label for="">Work/Rules</label>
+                            </td>
+                            <td>
+                                <label for="">From Date</label>
+                            </td>
+                            <td>
+                                <label for="">To Date</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><i style="color: white;">1</i></td>
+                            <td><textarea name="" id="" cols="25" rows="5"></textarea></td>
+                            <td><textarea name="" id="" cols="25" rows="5"></textarea></td>
+                            <td><input type="date"></td>
+                            <td><input type="date"></td>
+                        </tr>
+                        <tr>
+                            <td><i style="color: white;">2</i></td>
+                            <td><textarea name="" id="" cols="25" rows="5"></textarea></td>
+                            <td><textarea name="" id="" cols="25" rows="5"></textarea></td>
+                            <td><input type="date"></td>
+                            <td><input type="date"></td>
+                        </tr>
+                        <tr>
+                            <td><i style="color: white;">3</i></td>
+                            <td><textarea name="" id="" cols="25" rows="5"></textarea></td>
+                            <td><textarea name="" id="" cols="25" rows="5"></textarea></td>
+                            <td><input type="date"></td>
+                            <td><input type="date"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+                <fieldset>
+                    <legend>
+                        Other Details
+                    </legend>
+                    <table class="otherdetails">
+                        <tr>
+                            <td>
+                                <label for="">Job Type</label>
+                            </td>
+                            <td id="radio">
+
+                                <input type="radio">Permanent</input>
+                            </td>
+                            <td id="radio"><input type="radio">Contract</input></td>
+                            <td id="radio"><input type="radio">Others</input></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="">Date of joining</label>
+                            </td>
+                            <td><input type="date" name="" id=""></td>
+                            <td><label for="">Time Of Joining</label></td>
+                            <td><input type="time"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="">Prefered Location</label></td>
+                            <td id="radio"><input type="radio">Bhubaneswar</td>
+                            <td id="radio"><input type="radio">Bangalore</td>
+                            <td id="radio"><input type="radio">Other</td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="">Willing to Relocate</label>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                <input type="checkbox"><i style="color: white;">I am here declaring that all the above mentioned information is true as per my knowledge.</i></input>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><input type="submit" class="btn"></td>
+                            <td></td>
+                            <td><input type="reset" class="btn"></td>
+                        </tr>
+                    </table>
+                </fieldset>
+        </form>
+    </div>
+</body>
+
+</html>

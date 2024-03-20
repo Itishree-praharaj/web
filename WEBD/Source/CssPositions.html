@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #static {
+            background: linear-gradient(45deg, orange, white, green);
+            width: 200px;
+            color: blue;
+            text-align: center;
+            padding: 12px;
+
+        }
+
+        #fixed {
+            background: linear-gradient(135deg, red, black, white);
+            width: 200px;
+            color: blue;
+            text-align: center;
+            padding: 12px;
+            position: fixed;
+        }
+
+        #sticky {
+            background: linear-gradient(180deg, white, black, cyan);
+            width: 200px;
+            color: whitesmoke;
+            text-align: center;
+            padding: 12px;
+            position: sticky;
+            top: 0px;
+        }
+
+        #relative {
+            background: linear-gradient(45deg, blue, white, black);
+            width: 200px;
+            color: cyan;
+            text-align: center;
+            padding: 12px;
+            /* position: relative; */
+            top: 10px;
+        }
+        #Abs{
+            top: 12px;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="static">
+        <p>
+            static
+        </p>
+    </div>
+    <div id="fixed">
+        <p>
+            fixed
+        </p>
+    </div>
+    <div id="sticky">
+        <h1>Hii..Guys..
+            I am Sticky
+        </h1>
+    </div>
+    <div id="relative">
+        Relative
+        <div id="Abs">
+            Absolute
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+    }
+    fieldset{
+        border:  2px solid navy;
+        margin: auto;
+        width: 30vw;
+    }
+    table{
+        margin: auto;
+    }
+    legend{
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: medium;
+    }
+    input{
+        border:  2px solid aqua;
+    }
+    table{
+        border: 2px solid black;
+    }
+</style>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>
+                login
+            </legend>
+            <table class="tbl">
+                <tr class="row">
+                    <td>
+                        <label for="user">
+                            username
+                        </label>
+                    </td>
+                    <td>
+                        <input type="text" name="user" />
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pass">Password</label>
+                    </td>
+                    <td>
+                        <input type="password" name="pass"/>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+
+</html>

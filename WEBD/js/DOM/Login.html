@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Login Form</title>
+</head>
+
+<body>
+    <nav class="navbar bg-primary">
+        <div class="container-fluid fs-4">
+            <div class="row">
+                <div class="col-3">
+                    <a href="#" class="navbar-brand  text-dark">Validations</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="container">
+            <div class="row justify-content-around mt-4">
+                <div class="col-6">
+                    <div class="card">
+                        <div class="card-header bg-dark text-white text-center fs-2">
+                            Login here
+                        </div>
+                        <div class="card-body">
+                            <form action="FormSubmit.html" onsubmit="return valid();" method="post" target="_blank">
+                                <div>
+                                    <input type="text" placeholder="Enter Username" class="form-control" id="usn">
+                                </div>
+                                <div class="">
+                                    <input type="text" class="form-control mt-3" placeholder="Enter Password" id="pw">
+                                </div>
+                                <div>
+                                    <button type="submit" value="Login" class="btn btn-small btn-primary mt-3"
+                                        id="sub">Login</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Script code -->
+    <script>
+        let userName = document.getElementById('usn');
+        let inputValue = userName.value;
+        let Pw = document.getElementById('pw');
+        let passWord = pw.value;
+        let valid = function validate() {
+            if (userName.value.length <= 4) {
+                userName.style.boxShadow = "1px 1px 12px red";
+                setTimeout(() => {
+                    alert("Enter a valid username")
+                }, 100);
+                return false;
+            }
+            if (Pw.value.length < 7) {
+                Pw.style.boxShadow = "1px 1px 12px red";
+                alert("Enter a valid password")
+                return false;
+            }
+            else {
+                return true;
+            }
+        }
+
+
+        console.log(inputValue);
+        // console.log(valid);
+    </script>
+</body>
+
+</html>

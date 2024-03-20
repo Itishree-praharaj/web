@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let student = {
+            name: 'Rakesh',
+            age: 22,
+            adrs: 'banglr'
+        }
+
+        for (const key in student) {
+            console.log(student[key]);
+        }
+
+        let keys = Object.keys(student); //it will return all the keys of the object reference
+        console.log(keys);
+        let values = Object.values(student); //it will return all the values of the object reference
+        console.log(values);
+    </script>
+</body>
+
+</html>

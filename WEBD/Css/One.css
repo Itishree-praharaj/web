@@ -1,0 +1,11 @@
+h1{
+    background-color: aqua;
+    border: 2px solid blueviolet;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    background-color: rgb(234, 99, 10);
+}

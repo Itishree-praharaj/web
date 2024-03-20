@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Poltawski+Nowy:ital,wght@1,600&family=Poppins:ital,wght@0,600;0,700;1,400&family=Titillium+Web&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../fa/css/all.css">
+    <title>Form</title>
+    <style>
+        body {
+            background-image: url(../img/bg4.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin: 0px;
+            background-attachment: fixed;
+        }
+
+        .form {
+            margin: 100px auto;
+            width: 300px;
+            border: 2px solid whitesmoke;
+            border-radius: 20px 0px 20px 0px;
+            text-align: center;
+        }
+
+        .form:hover {
+            box-shadow: 2px 2px 15px whitesmoke;
+        }
+
+        .form-input>input,
+        .form-input>textarea {
+            width: 200px;
+            background: none;
+            border: 0px;
+            outline: 0px;
+            color: white;
+            border-bottom: 1px solid whitesmoke;
+            margin-bottom: 6px;
+            margin-top: 15px;
+        }
+
+        .form-input:hover {
+            box-shadow: 2px 2px 10px whitesmoke;
+        }
+
+        ::placeholder {
+            color: cyan;
+            font-family: 'Lobster', sans-serif;
+            font-family: 'Poltawski Nowy', serif;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Titillium Web', sans-serif;
+        }
+
+        .icon {
+            color: white;
+            margin: auto;
+            position: relative;
+            top: 55px;
+            text-align: center;
+            font-size: 80px;
+        }
+
+        i {
+            color: white;
+        }
+
+        .form-submit>input[type="Submit"] {
+            padding: 10px 25px;
+            margin: 12px 0px;
+            border-radius: 10px 10px 10px 10px;
+            opacity: 0.8;
+            border: 0px;
+            outline: 0px;
+        }
+
+        .form-submit>input[type="Submit"]:hover {
+            box-shadow: 2px 2px 10px whitesmoke;
+            opacity: 10;
+        }
+        #top{
+            border-radius: 20px 0px 0px 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="icon">
+        <i class="fa-solid fa-user-large"></i>
+    </div>
+    <div class="form">
+        <form action="" class="form-tag">
+            <div class="form-input" id="top">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Username">
+            </div>
+            <div class="form-input">
+                <i class="fa-solid fa-key"></i>
+                <input type="password" placeholder="Enter Password">
+            </div>
+            <div class="form-input">
+                <i class="fa-solid fa-envelope"></i>
+                <input type="email" placeholder="Enter email">
+            </div>
+            <div class="form-input">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" placeholder="Enter username">
+            </div>
+            <div class="form-input">
+                <i class="fa-solid fa-key"></i>
+                <input type="password" placeholder="Enter password">
+            </div>
+            <div class="form-input">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Descsription"></textarea>
+            </div>
+            <div class="form-submit">
+                <input type="submit" name="" id="">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

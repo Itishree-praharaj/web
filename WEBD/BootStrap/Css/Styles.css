@@ -1,0 +1,13 @@
+#landingpage{
+    height: 100vh;
+    background:url(../img/bg.jpg)no-repeat;
+    background-size: cover;
+}
+#landingpagediv{
+    height: inherit;
+    width: inherit;
+    background: rgba(0, 0, 0, 0.3);
+}
+body{
+    margin:0;
+}

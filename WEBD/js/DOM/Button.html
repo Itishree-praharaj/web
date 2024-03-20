@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        button {
+            background-color: white;
+            color: black;
+            /* outline: none; */
+            outline: 1px solid black;
+            border: none;
+            padding: 12px 15px;
+            border-radius: 12px 12px;
+        }
+
+        button:hover {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="btn">Click</button>
+    <h1>value is <span id="display">0</span></h1>
+    <script>
+        let btntag = document.getElementById("btn");
+        // increase=0;
+        let displayTag = document.getElementById("display");
+        // btntag.onclick = increase;
+        let count = 0;
+        localStorage.setItem('count', count);
+        sessionStorage.setItem('count', count);
+        console.log(count);
+        btntag.addEventListener('click', increase);
+        function increase() {
+            // console.log(count);
+            localStorage.setItem('count', count++);
+            sessionStorage.setItem('count', count++);
+            displayTag.innerText = localStorage.getItem('count');
+        }
+
+    </script>
+</body>
+
+</html>

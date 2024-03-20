@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0px 10px 10px black;
+        }
+
+        div>img {
+            height: inherit;
+            width: inherit;
+            transition: all 1s linear 0s;
+        }
+        .content-section {
+            transition: all 0s linear 1s;
+            transform: translateY(100%);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            transition: all 1s linear 0s;
+            background-color: black;
+            color: rgb(255, 255, 255);
+
+        }
+        .content-section>h2{
+            padding: 50px 30px
+        }
+        div:hover>.content-section {
+            transform: translateY(0%);
+        }
+
+        div:hover>img {
+            transform: translateX(-100%);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="../img/Batman1.jpg" alt="">
+        <div class="content-section">
+            <h2>
+                I am Batman
+            </h2>
+        </div>
+    </div>
+</body>
+
+</html>

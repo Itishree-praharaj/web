@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let arr = [1, 2, 3, 4, 5, 6];
+        let obj = { name: "R", age: 22, address: "S" };
+        let arr2 = { ...arr };
+        // let obj2 = [...obj] //objects can not be spread into an array because objects are not iterable
+        console.log(arr2);
+        // console.log(obj2);
+
+        let num1 = [1, 2, 3];
+        let num2 = [3, 4, 5, 6];
+        let num3 = [...num1, ...num2];
+        console.log(num3);
+
+        let car1 = {
+            name: 'RangeRover',
+            model: 'sport',
+            color: 'black',
+            price: 10000000
+        }
+        let car2 = {
+            name: 'jaguar',
+            model: 'fpace',
+            color: 'black',
+            price: 1000000
+        }
+
+        let car = { ...car1, ...car2 };
+        console.log(car); //here the properties of car2 will override the properties of car1
+    </script>
+</body>
+
+</html>

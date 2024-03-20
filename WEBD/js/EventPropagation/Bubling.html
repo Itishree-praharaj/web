@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="div">
+        <button id="btn">
+            click here
+        </button>
+        <p>Hey there</p>
+    </div>
+    <script>
+        let div = document.getElementById("div");
+        div.addEventListener("click", event => {
+            console.log("div container clicked");
+        },false.)
+
+        let button = document.getElementById("btn");
+        button.addEventListener("click", event => {
+            // event.stopPropagation();// stoped bubling
+            console.log("btn clicked");
+        }) 
+    </script>
+</body>
+
+</html>

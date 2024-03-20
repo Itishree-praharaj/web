@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../fa/css/all.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lobster&family=Nosifer&family=Poltawski+Nowy:ital,wght@1,600&family=Poppins:ital,wght@0,600;0,700;1,400&family=Rubik&family=Titillium+Web&display=swap"
+        rel="stylesheet">
+    <title>Facebook</title>
+    <style>
+        body {
+            margin: 0px;
+            background-color: rgb(230, 223, 223);
+            font-family: 'Lobster', sans-serif;
+            font-family: 'Nosifer', sans-serif;
+            font-family: 'Poltawski Nowy', serif;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Rubik', sans-serif;
+            font-family: 'Titillium Web', sans-serif;
+            /* font-family: sans-serif; */
+        }
+
+        header {
+            background-color: rgb(61, 61, 199);
+            color: white;
+            padding: 15px;
+            height: 67px;
+        }
+
+        header>table {
+            float: right;
+            margin-right: 80px;
+            font-size: 15px;
+        }
+        #title{
+            padding: 12px;
+            display: inline;
+            font-size: 35px;
+        }
+        #forgot-pass {
+            color: white;
+            text-decoration: none;
+        }
+
+        .desc {
+            display: inline;
+            float: left;
+            width: 600px;
+        }
+
+        .desc>.links>h4 {
+            margin: 44px;
+        }
+
+        .desc>.links>h4>i {
+            padding: 0px 12px;
+        }
+
+        .sign-form {
+
+            margin-left: 1000px;
+        }
+
+        .desc>.links {
+            margin: 12px 50px;
+        }
+
+        .desc>.links>h4>a {
+            text-decoration: none;
+        }
+
+        .desc>h2 {
+            margin-left: 12px;
+        }
+
+        .sign-form>div {
+            margin: 12px 0px;
+        }
+
+        .sign-form>.signup>h5 {
+            margin-top: -12px;
+        }
+
+        .sign-form>div>input {
+            width: 300px;
+            padding: 12px;
+            border: 2px solid black;
+            border-radius: 10px;
+            outline: 0px;
+        }
+
+        .sign-form>#name>input {
+            width: 135px;
+
+        }
+
+        .sign-form>#dob>input {
+            width: 135px;
+        }
+
+        .sign-form>#gender>input {
+            width: 20px;
+        }
+
+        .sign-form>#btn>button {
+            outline: none;
+            padding: 10px 50px;
+            border-radius: 10px;
+            color: white;
+            background-color: rgb(42, 151, 42);
+        }
+
+        .sign-form>#dob>h5 {
+            margin: 2px;
+            /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+            font-size: 20px;
+        }
+        .signup>h1 {
+            /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+            font-size: 35px;
+        }
+
+        .signup>h5 {
+            /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+            font-size: 12px;
+        }
+        section>.sign-form>#btn>button:hover{
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h3 id="title">facebook</h3>
+        <table>
+            <tr>
+                <td><label for="">Email or phone</label></td>
+                <td><label for="">Password</label></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><input type="text"></td>
+                <td><input type="text"></td>
+                <td><button>Login</button></td>
+            </tr>
+            <tr>
+                <td><input type="checkbox">Keep Me Logged in</td>
+                <td><a href="" id="forgot-pass">Forgot Password</a></td>
+            </tr>
+        </table>
+    </header>
+    <section>
+        <article class="desc">
+            <h2>Connect with friends and the world around you on Facebook</h2>
+            <div class="links">
+                <h4><i class="fa-regular fa-newspaper fa-2xl" style="color: #707070;"></i><a href=""></i></i>See photos
+                        and
+                        updates</a> from friends in News
+                    Feed</h4>
+                <h4><i class="fa-solid fa-rss fa-2xl" style="color: #8f8f8f;"></i><a href="">Share whatsnew</a> in your
+                    life on your Timeline</h4>
+                <h4><i class="fa-solid fa-magnifying-glass fa-2xl" style="color: #828282;"></i><a href=""></i> Find
+                        more</a> of what you're looking in graphic search</h4>
+            </div>
+        </article>
+        <article class="sign-form">
+            <div class="signup">
+                <h1>Sign Up</h1>
+                <h5>It's free and always will be</h5>
+            </div>
+            <div id="name">
+                <input type="text" placeholder="First Name">
+                <input type="text" placeholder="Last Name">
+            </div>
+            <div id="mobilenum">
+                <input type="text" placeholder="Enter Mail or Phone Number">
+            </div>
+            <div id="remobile"><input type="text" placeholder="Enter Password"></div>
+            <div id="pass"><input type="text" placeholder="Re Enter Password"></div>
+            <div id="dob">
+                <h5>BirthDay</h5>
+                <input type="date" name="" id="">
+                <p style="display: inline;"><a href="">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></p>
+            </div>
+            <div id="gender"><input type="radio" name="gen">Male <input type="radio" name="gen">Female</div>
+            <div>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex quidem placeat est eum fugiat quis
+                    accusamus totam ratione in similique?
+                </p>
+            </div>
+            <div id="btn">
+                <button style="font-weight: bold;">Create Account</button>
+            </div>
+            <hr>
+            <div id="for-celeb"><a href="" style="text-decoration: none;">Create a Page </a> for celebrity, band or
+                business</div>
+        </article>
+    </section>
+</body>
+
+</html>

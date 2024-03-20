@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 class="heading" id="h1">Document</h1>
+    <h3 class="heading">object</h3>
+    <script>
+        let id = document.getElementById("h1");
+        console.log(id);
+        let h1class = document.getElementsByClassName("heading");
+        console.log(h1class); //multi selector
+
+        let h1tag = document.getElementsByTagName("h1");
+        console.log(h1tag); //multi selector
+
+        let queryh1 = document.querySelector(".heading");
+        console.log(queryh1); //single selector
+
+        let allqueryh1 = document.querySelectorAll(".heading");
+        console.log(allqueryh1); //multi selector but iterable
+
+        // allqueryh1.forEach(element => {
+        //     console.log(element);
+        // });
+
+        //Inner Html
+
+        id.innerHTML += '<p>Hello</p>'; //adding another element to the h1 element
+
+        //style
+
+        id.style.background = "linear-gradient(45deg,red,black,blue)";
+
+        //attributes
+
+        //set attribute
+        id.setAttribute("class", "js");
+        //get attribute
+        console.log(id.getAttribute("class"));
+        //remove attribute
+        id.removeAttribute("class");
+        console.log(id);
+        //has attribute
+        let hasid = id.hasAttribute("id"); //checks if the id is present in the tag or not
+        console.log(hasid);
+
+        //create element
+        let x = document.createElement("span");
+        x.innerText = "Hello";
+        console.log(x);
+
+        id.appendChild(x);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="one" class="uno">
+        <h1>Attributes</h1>
+    </div>
+    <!-- Script code -->
+    <script>
+        let divTag = document.getElementById('one');
+        let attribute = divTag.getAttribute('id');
+        let text = divTag.innerText;
+        console.log(text);
+        // divTag.setAttribute('class', 'two');
+        attribute = divTag.getAttribute('class');//adding separate class
+
+        console.log(attribute);
+
+        divTag.classList.add('two');
+        console.log(divTag.getAttribute('class'));
+    </script>
+</body>
+
+</html>
